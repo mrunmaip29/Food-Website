@@ -1,0 +1,371 @@
+:root{
+  --yellow:#ff0000c9;
+}
+ 
+ body,select,input[type="text"],textarea{
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+
+
+/* -----------------Navbar part----START------------------- */
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  text-transform: capitalize;
+  /* transition:all .2s linear; */
+}
+
+h1, h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+  background:var(--yellow);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
+  /* height:200rem; */
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:#333;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--yellow);
+}
+
+section{
+  min-height: 100vh;
+  padding:1rem 10%;
+  padding-top: 8.5rem;
+}
+
+.btn{
+  font-size: 1.7rem;
+  padding:.7rem 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  background:none;
+  color:#333;
+  cursor: pointer;
+  border:.2rem solid var(--yellow);
+}
+
+.btn:hover{
+  background:var(--yellow);
+  color: white;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  padding:0 .5rem;
+  color:#333;
+}
+
+.heading span{
+  color:var(--yellow);
+}
+
+header{
+  position: fixed;
+  top:0; left:0;
+  z-index: 1000;
+  width:100%;
+  background:#fff;
+  padding:1.5rem 10%;
+  box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img{
+  height:5rem;
+}
+
+header .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li{
+  margin-left: 3.5rem;
+}
+
+header .navbar ul li a{
+  /* font-size: 1.7rem; */
+  font-size: 1.6rem;
+  color:#666;
+}
+
+header .navbar  li a.active,
+header .navbar ul li a:hover{
+  color:var(--yellow);
+  text-decoration: none;
+  transition:all .2s linear;
+}
+
+header #menu-bar{
+  font-size: 3rem;
+  color:#666;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+/*--------- media queries--------------  */
+
+@media (max-width:991px){
+
+  html{
+      font-size: 55%;
+  }
+
+  .home::before,
+  .home::after{
+      display: none;
+  }
+
+}
+
+@media (max-width:768px){
+
+
+  header #menu-bar{
+      display: block;
+  }
+
+  header .navbar{
+      position: fixed;
+      top:8rem; left:0;
+      width:100%;
+      background:#ff0000c9;
+      border-top: .2rem solid rgba(0,0,0,.1);
+      transform:scaleY(0);
+      transform-origin: top;
+      opacity: 0;
+  }
+
+  header .navbar ul{
+      flex-flow: column;
+      padding:2rem;
+  }
+
+  header .navbar ul li{
+      margin:1.5rem;
+      width: 100%;
+  }
+
+  header .navbar ul li a{
+      display: block;
+      color:#fff;
+      padding-left: 2rem;
+      border-left: .2rem solid #fff;
+      font-size: 2rem;
+  }
+
+  header .navbar ul li a:hover,
+  header .navbar ul li a.active{
+      color:#333;
+      border-color: #333;
+  }
+
+  .fa-times{
+      transform:rotate(180deg);                   /*rotates the icon at 180 degrees*/ 
+  }
+
+  header .navbar.nav-toggle{
+      transform:scaleY(1);
+      opacity: 1;
+  }
+
+  .home .content{
+      text-align: center;
+  }
+
+  .home .content h3{
+      font-size: 4.5rem;
+  }
+
+  .order {
+      display: none;
+  }
+
+}
+
+@media (max-width:500px){
+
+  html{
+      font-size: 50%;
+  }
+
+  section{
+      padding:1rem 5%;
+      padding-top: 8.5rem;
+  }
+}
+
+
+
+
+
+/* -----------------Navbar part-----END--------------------- */
+
+
+
+
+
+/* --------------- ORIGINAL CSS CODE OF INDEX.HTML----START----------------------*/
+
+
+    table,
+    tr,
+    td {
+      /* border: 2px solid #F7CA3E; */
+      border: 2px solid #ff0000c9;
+      border-collapse: collapse;
+      padding: 5px;
+      margin-top: 30px;
+      margin: 0 auto;
+
+    }
+
+    body,.bill,.bill1,#sf,.mybutton,#entrybox{
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+    }
+
+    .pricelist {
+      text-align: center;
+    }
+
+    h1, h3 {
+      font-family: 'Oswald', sans-serif;
+  }
+
+    .mybutton {
+      /* background-color: #4CAF50;
+
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      border: none;
+      display: inline-block;
+      font-size: 16px;
+
+      cursor: pointer;
+      background-color: #555555;
+      border-radius: 4px; */
+
+      font-size :1.5rem;
+    padding:.7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background:#ff0000c9;
+    color:white;
+    cursor: pointer;
+    border:1px solid #000000c9;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    }
+
+    /* .btn{
+      font-size: 1.7rem;
+      padding:.7rem 4rem;
+      border-radius: 5rem;
+      margin-top: 1rem;
+      background:none;
+      color:#333;
+      cursor: pointer;
+      border:.2rem solid #F7CA3E;
+  } */
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.747) ;
+    opacity: 5; /* Firefox */
+  }
+
+  .btn:hover{
+    background-color: white;
+    color:black;
+    transition-delay: .2s linear;
+  }
+
+    #entrybox {
+      width: 20%;
+      height: 43px;
+      margin-left: 5px;
+      border: 2px solid #b4b39d;
+      border-radius: 60px;
+      color: white;
+      background-color: #ff0000c9;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    }
+
+    .bill {
+      margin-left: 24%;
+      margin-right: 20%;
+      border-radius: 0.5rem;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+
+    }
+
+    .bill1 {
+      margin-left: 33%;
+      margin-right: 20%;
+
+    }
+
+    #sf {
+      height: 48px;
+      border: 2px solid #ff0000c9;
+      border-radius: 4px;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    }
+
+    .bill2 {
+      margin-left: 48%;
+      position: absolute;
+      left:9.5rem;
+    }
+     .bill3 {
+      margin-left: 40%;
+      position: absolute;
+      left:1rem;
+    }
+
+    h1, h3{
+      font-family: 'Oswald', sans-serif;
+  }
+
+  span{
+    color:var(--yellow);
+    transition-delay: .4s linear; 
+}
+
+
+
+
+/* --------------- ORIGINAL CSS CODE OF INDEX.HTML----ENDING----------------------*/
